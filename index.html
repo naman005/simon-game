@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h1 class="stylish-text">simon</h1>
+        <h3>Do What Simon Says</h3>
+        <p>
+            Follow the pattern of lights for <br/> as long as you can
+        </p>
+        <button type="button" value="start" class="stylish-text" onclick = "start()">start</button>
+        <footer>
+            Made with ❤️ by 
+            <a href="https://github.com/naman005/simon-game"><i class="fa-brands fa-github"></i> Naman</a>
+        </footer>
+    </div>
+    <header>
+        <h1 class="stylish-text">simon</h1>
+    </header>
+    <main>
+        <section class="score">
+            <div class="stylish-text">score <br/> <b id = "newscore">0</b></div>
+            <div class="stylish-text">high score <br/> <b id="highscore">0</b></div>
+            <span class="quit-btn stylish-text" onclick="quit()">Quit <i class="fa-solid fa-xmark"></i></span>
+        </section>
+        <section class="game-screen">
+            <p id="powerbtn" style="display: block;"><i class="fa-solid fa-power-off fa-xl"></i></p>
+            <p id="simonText" style="display: none;">SIMON</p>
+            <div class="box">
+                <div class="btn no-highlights green" id="green"></div>
+                <div class="btn no-highlights red" id="red"></div>
+                <div class="btn no-highlights blue" id="blue"></div>
+                <div class="btn no-highlights yellow" id="yellow"></div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
